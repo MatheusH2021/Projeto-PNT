@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contatos</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h2>Lista Telefônica</h2>
+  </header>
+  <main>
+    <div id="root">
+      <div class="contatos">
+        <form @submit="adicionarContato" class="form">
+          <input class="form" type="text" placeholder="Nome do contato..." v-Model="nome">
+          <input class="form" type="tel" placeholder="Telefone do contato..." v-Model="telefone">
+          <button type="submit">Add+</button>
+        </form>
+        <h3>Contatos:</h3>
+        <ul v-for="contato in contatos">
+          <li>
+            <h4> {{ contato.nome }}</h4>
+            <span>Tel: {{ contato.telefone }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js">
+  </script>
+  <script src="script.js">
+  </script>
+</body>
