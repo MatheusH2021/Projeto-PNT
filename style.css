@@ -21,7 +21,11 @@ main{
     display: flex;
     justify-content: center;
 }
-
+button:hover{
+    background-color: #BB2020;
+    border: 1px solid #ccc;
+    color: white;
+}
 h2{
     color: white;
     margin: 0;
@@ -31,7 +35,7 @@ h3{
 }
 h4{
     font-weight: bolder;
-    margin: 2px;
+    margin: 0;
 }
 
 form button{  
@@ -54,10 +58,8 @@ input{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-button:hover{
-    background-color: #BB2020;
-    border: 1px solid #ccc;
-    color: white;
+img{
+    margin-right: 2px;
 }
 span{
     font-size: 12px;
@@ -81,5 +83,7 @@ ul{
     padding: 25px 25px 10px;
 }
 .contatos span{
+    margin-bottom: 5px;
     font-style: italic;
 }
+
